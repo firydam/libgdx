@@ -7,7 +7,7 @@ import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.mygdx.game.MyGdxGame;
 
 public class AndroidLauncher extends AndroidApplication {
-	@Override
+	@TargetApi(Build.VERSION_CODES.LOLLIPOP) @Override
 	protected void onCreate (Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		AndroidApplicationConfiguration config = new AndroidApplicationConfiguration();
